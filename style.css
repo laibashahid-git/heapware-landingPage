@@ -372,21 +372,61 @@ footer {
   font-size: 13px;
 }
 
-@media(max-width:900px) {
-  .hero {
+.menu-icon{
+  display:none;
+  font-size:28px;
+  cursor:pointer;
+  color:white;
+}
+
+@media(max-width:900px){
+  nav{
+    padding: 15px 7%;
+  }
+  .menu-icon{
+    display:block;
+  }
+  nav ul{
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: #0f0f0f;
+    flex-direction: column;
+    gap: 0;
+    padding: 20px 7%;
+    border-top: 1px solid #1a1a1a;
+    display: none;
+  }
+  nav ul.show{
+    display: flex;
+  }
+  nav ul li{
+    padding: 12px 0;
+    border-bottom: 1px solid #1a1a1a;
+  }
+  .btn-nav{
+    display: none;
+  }
+  .hero{
     flex-direction: column;
     text-align: center;
+    padding-top: 100px;
   }
-
-  .hero-btns {
+  .hero-btns{
     justify-content: center;
   }
-
-  .hero-stats {
+  .hero-stats{
     justify-content: center;
   }
-
-  .why {
+  .glass-card{
+    width: 100%;
+    max-width: 350px;
+    height: 320px;
+    margin-top: 30px;
+  }
+  .why{
     flex-direction: column;
   }
 }
+

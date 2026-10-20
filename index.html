@@ -9,7 +9,8 @@
 <body>
     <nav>
         <div class="logo">HEAP<span>WARE</span></div>
-        <ul>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <ul id="navLinks">
             <li><a href="#" class="active">Home</a></li>
             <li><a href="#">Services</a></li>
             <li><a href="#">About</a></li>
@@ -54,7 +55,7 @@
     <!-- Why Choose Us -->
     <section class="why">
         <div class="why-text">
-            <h2>Our Goal Is Delivering  Excellence In IT Services.</h2>
+            <h2>Our Goal Is Delivering Excellence In IT Services.</h2>
             <p>We focus on scalability, security, and efficiency to support your business growth. From database management to performance optimization.</p>
             <ul>
                 <li>✓ 24/7 Expert Support</li>
@@ -79,5 +80,12 @@
             <p>© 2024 Heapware Solutions. Designed by Laiba Shahid</p>
         </div>
     </footer>
+
+<script>
+function toggleMenu(){
+  document.getElementById("navLinks").classList.toggle("show");
+}
+</script>
+
 </body>
 </html>
